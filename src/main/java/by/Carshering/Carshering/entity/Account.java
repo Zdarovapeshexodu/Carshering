@@ -1,5 +1,6 @@
 package by.Carshering.Carshering.entity;
 
+import by.Carshering.Carshering.utils.enumirations.Role;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,4 +24,6 @@ public class Account {
     private List<BoughtCar> boughtCars;
     @OneToOne
     private KreditCard kreditCard;
+    private Role role;
+
 }
