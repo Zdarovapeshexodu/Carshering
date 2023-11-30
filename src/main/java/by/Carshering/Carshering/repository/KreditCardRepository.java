@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface KreditCardRepository extends JpaRepository<KreditCard,Long> {
+    KreditCard findByCardNumber(String cardNumber);
 }

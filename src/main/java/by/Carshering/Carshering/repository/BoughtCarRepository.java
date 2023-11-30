@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BoughtCarRepository extends JpaRepository<BoughtCar,Long> {
+    BoughtCar findById(long id);
+    void deleteById(long id);
 }
