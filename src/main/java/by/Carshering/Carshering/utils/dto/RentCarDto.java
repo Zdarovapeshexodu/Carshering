@@ -2,13 +2,13 @@ package by.Carshering.Carshering.utils.dto;
 
 import lombok.*;
 
-@Setter
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class CarUpdateDto {
-    private String location;
-    private double price;
+public class RentCarDto {
+    private long id;
+    private long carId;
+    private int time;
 }
